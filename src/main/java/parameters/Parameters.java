@@ -5,8 +5,26 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
+import static processing.core.PConstants.ADD;
+import static processing.core.PConstants.HSB;
+
 public final class Parameters {
     public static final long SEED = 11;
+    public static final int WIDTH = 1200;
+    public static final int HEIGHT = 1200;
+    public static final int MARGIN = 200;
+    public static final int NUMBER_OF_POINTS = 11;
+    public static final int NUMBER_OF_NEIGHBOURS = 4;
+    public static final int NUMBER_OR_ITERATIONS = 1000;
+    public static final int SWEEP_AMOUNT = 250;
+    public static final float SWEEP_GAUSSIAN_FACTOR = .5f;
+    public static final float SPEED_LOSS = .99f;
+    public static final float FORCE = .00025f;
+    public static final int COLOR_MODE = HSB;
+    public static final int BLEND_MODE = ADD;
+    public static final float HUE = 172;
+    public static final Color BACKGROUND_COLOR = new Color(HUE - 30, 75, 5);
+    public static final Color STROKE_COLOR = new Color(HUE, 50, 80, 1.5f);
 
     /**
      * Helper method to extract the constants in order to save them to a json file
